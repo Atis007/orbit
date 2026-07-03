@@ -1,0 +1,15 @@
+package dev.atis007.orbit;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
+
+@Import(TestcontainersConfiguration.class)
+@SpringBootTest
+class OrbitApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
