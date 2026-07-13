@@ -1,3 +1,16 @@
 spring:
   application:
     name: orbit
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orbit
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASS}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  config:
+    import: "optional:file:.env[.properties]"

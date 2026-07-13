@@ -1,26 +1,71 @@
 # Maven (api/)
 target/
 !.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+HELP.md
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 # Node / Angular (web/)
 node_modules/
-dist/
-.angular/
+/dist
+/tmp
+/out-tsc
+/bazel-out
+npm-debug.log
+yarn-error.log
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+__screenshots__/
+.history/*
 
 # IDE - IntelliJ
 .idea/
 *.iml
 *.iws
+*.ipr
 
 # IDE - VS Code
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+
+# IDE - other
+.c9/
+*.launch
+.sublime-workspace
 
 # OS
 .DS_Store
 Thumbs.db
 
 # Env files
-.env
+**/.env
 application-local.yml
 
 plan/
